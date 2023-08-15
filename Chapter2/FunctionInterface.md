@@ -116,21 +116,3 @@ let result2 = increment.compose(twice).apply(10);
   - java.util.function.BinaryOparator<br>
   同じ型の引数を2つ受け取り、それと同じ型の戻り値を返す<br>
   java.util.function.BiFunctionを継承している
-
-## java.lang.Runnableインターフェース
-Threadクラスで記述する、runメソッドのみを持つインターフェース<br>
-
-### 参考
-- [Chapter3/Thread.md](../Chapter3/Thread.md)
-- [Chapter3/Executor.md](../Chapter3/Executor.md)
-
-## java.util.concurrnet.Callableインターフェース
-Java SE 5で導入された<br>
-Threadクラスに渡すための処理であるという点はRunnableインターフェースと同様だが、**戻り値を返すことができる, 例外をスローすることができる**という点が異なる
-
-### 例外
-Callableインターフェースから投げられる例外は、java.util.concurrent.ExecutionExeprion型(検査例外)である<br>
-callメソッドの中で投げた例外は、ExecutionExeptionの内部に保持されているため、Throwableから引き継いだgetCauseメソッドを使用して取り出すことができる
-
-### 参考
-- [Chapter3/Executor.md](../Chapter3/Executor.md)
