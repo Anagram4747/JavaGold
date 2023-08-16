@@ -15,6 +15,7 @@
 |java.util.function|BinaryOperator\<T>|T|apply(T, T)|
 |java.lang|Runnable|void|run()|
 |java.util.concurrent|Callable\<V>|V|call()|
+|java.util|Comparator\<T>|int|compare(T, T)|
 
 ### 各単語の日本語訳
 - インターフェース名
